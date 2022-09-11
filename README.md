@@ -1,14 +1,13 @@
 # DGV
 
-## 팀원 소개 (가나다 순)
+## Development
 
-- FE
-
-  > 최규선, 최슬기, 하서율
-
-- BE
-
-  > 박명호, 정세한
+* 개발기간   : 2022/08/29 ~ 2022/09/08
+* 개발인원   : 5 명
+* Frontend : 최규선, 최슬기, 하서율
+* Backend  : 정세한, 박명호
+* FrontEnd 깃허브 주소 : (https://github.com/wecode-bootcamp-korea/36-2nd-DGV-frontend)
+* Backend 깃허브 주소 : (https://github.com/wecode-bootcamp-korea/36-2nd-DGV-backend)
 
 ## 기술 스택
 
@@ -86,3 +85,30 @@ UI 보다 기능구현이 먼저!
 > > 아쉬웠던 점: 파일 구조를 전체적으로 변경하고, 응답되는 데이터 구조들을 수정하는 것에 시간을 많이 소요하여 도커의 사용과 테스트 코드의 적용이 미흡했습니다. 이는 주말간 진행하여 개인 깃 저장소에 업로드 할 예정입니다.
 > > 
 > > 개선 할 점: MVP 즉, 최소 기능 구현에 목적을 맞추고 수정을 진행하는 것이 중요하다는 것과 팀 전체의 진행상황 파악을 위한 PR의 중요성을 깨달을 수 있었습니다.
+
+## APIs
+
+### User
+
+|   End point   	| HTTP Method 	| Description 	| Status 	|
+|:-------------:	|:-----------:	|:-----------:	|:------:	|
+|  /user/login 	|     POST    	|   로그인 및 회원가입  	|  201  	|
+| /user/detail 	|     GET    	|    유저 상세정보    	|  200  	|
+
+### Moive
+
+|          End point         	| HTTP Method 	| Description 	| Status 	|
+|:--------------------------:	|:-----------:	|:-----------:	|:------:	|
+|          /movies/         	|     GET     	| 영화 제목별 조회 	|  200  	|
+| /movies/list 	|     GET     	|  영화 주간별점순/개봉일순 조회 	|  200  	|
+|          /movies/locations         	|     GET     	| 영화 (대)지역별 조회 	|  200  	|
+|          /movies/sublocation         	|     GET     	| 영화 (소)지역별 조회	|  200  	|
+|          /movies/idandsublocation         	|     GET     	| 영화별 대/소 지역 조회 	|  200  	|
+|          /movies/:movieId         	|     GET     	| 영화 상세 조회 	|  200  	|
+
+### Theater
+
+|                    End point                   	| HTTP Method 	|     Description     	| Status 	|
+|:----------------------------------------------:	|:-----------:	|:-------------------:	|:------:	|
+|        /theaters/movies        	|  GET  	| 전체 영화/지역 조회 	|  200  	|
+|        /theaters/list        	|  GET  	| 전체 영화 및 선택 영화의 상영관 조회 	|  200  	|
