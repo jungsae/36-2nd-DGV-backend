@@ -86,6 +86,11 @@ UI 보다 기능구현이 먼저!
 > > 
 > > 개선 할 점: MVP 즉, 최소 기능 구현에 목적을 맞추고 수정을 진행하는 것이 중요하다는 것과 팀 전체의 진행상황 파악을 위한 PR의 중요성을 깨달을 수 있었습니다.
 
+##ERD
+
+![DGV_3rd](https://user-images.githubusercontent.com/81615965/189543996-ef69ecda-6fd8-4ff5-baf6-a5e84d2c1767.png)
+
+
 ## APIs
 
 ### User
